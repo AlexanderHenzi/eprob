@@ -1,0 +1,14 @@
+Package: eprob
+Type: Package
+Title: E-values for sequential inference on probability forecast performance
+Version: 0.1.0
+Author: Alexander Henzi
+Maintainer: Alexander Henzi <henzi.alexander@gmail.com>
+Description: Tools for drawing inference on the relative performance of probability
+    forecasts for binary events.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+License: GPL (>= 2)
+Depends: R (>= 3.5)
+RoxygenNote: 7.1.0
