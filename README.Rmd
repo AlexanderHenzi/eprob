@@ -30,7 +30,7 @@ devtools::install_github("AlexanderHenzi/eprob")
 
 Below are basic examples which illustrate how to use the package:
 
-```{r example}
+```{r example, eval=FALSE}
 library(eprob)
 
 # Simulation example 1 (see ?sim1). For mu > 0.5, q is better than p.
@@ -102,7 +102,7 @@ etest(p = p_w, q = q_w, y = y_w, alt = q_w, h = 3, type = tp)$evalue
 
 ## References
 
-Read the arXiv preprint on:
+Preprint available on https://arxiv.org/abs/2103.08402.
 
 Replication material for all results in the preprint is contained in the folder
 `replication_material`.

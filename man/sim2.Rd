@@ -24,4 +24,7 @@ See Section 4.2 in "" for a description of the output.
 }
 \references{
 Preprint on e-values for forecast evaluation:
+
+A. Henzi and J. F Ziegel. Valid sequential inference on probability forecast
+performance. arXiv preprint arXiv:2103.08402, 2021.
 }

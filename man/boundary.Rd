@@ -27,6 +27,9 @@ equally good with respect to a given scoring function.
 \references{
 Preprint on e-values for forecast evaluation:
 
+A. Henzi and J. F Ziegel. Valid sequential inference on probability forecast
+performance. arXiv preprint arXiv:2103.08402, 2021.
+
 Proper scoring rules for probabilities:
 
 Gneiting, Tilmann, and Adrian E. Raftery. "Strictly proper scoring rules,

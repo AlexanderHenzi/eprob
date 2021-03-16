@@ -1,7 +1,7 @@
 #' E-values for sequential inference on probability forecast performance
 #'
 #' This package offers functions for testing the significance of score
-#' differences for probability forecass.
+#' differences for probability forecasts.
 #'
 #' @section How does it work?:
 #'
@@ -14,6 +14,8 @@
 #'
 #' @references
 #'
+#' A. Henzi and J. F Ziegel. Valid sequential inference on probability forecast
+#' performance. arXiv preprint arXiv:2103.08402, 2021.
 #'
 #' @examples
 #'

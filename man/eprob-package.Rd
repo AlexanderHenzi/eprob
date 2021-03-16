@@ -5,7 +5,7 @@
 \title{E-values for sequential inference on probability forecast performance}
 \description{
 This package offers functions for testing the significance of score
-differences for probability forecass.
+differences for probability forecasts.
 }
 \section{How does it work?}{
 
@@ -84,5 +84,6 @@ y_w <- y[-na_ind]
 etest(p = p_w, q = q_w, y = y_w, alt = q_w, h = 3, type = tp)$evalue
 }
 \references{
-
+A. Henzi and J. F Ziegel. Valid sequential inference on probability forecast
+performance. arXiv preprint arXiv:2103.08402, 2021.
 }

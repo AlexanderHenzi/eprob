@@ -19,6 +19,9 @@
 #'
 #' Preprint on e-values for forecast evaluation:
 #'
+#' A. Henzi and J. F Ziegel. Valid sequential inference on probability forecast
+#' performance. arXiv preprint arXiv:2103.08402, 2021.
+#'
 #' Proper scoring rules for probabilities:
 #'
 #' Gneiting, Tilmann, and Adrian E. Raftery. "Strictly proper scoring rules,
@@ -60,6 +63,9 @@ score <- function(y, p, type) {
 #' @references
 #'
 #' Preprint on e-values for forecast evaluation:
+#'
+#' A. Henzi and J. F Ziegel. Valid sequential inference on probability forecast
+#' performance. arXiv preprint arXiv:2103.08402, 2021.
 #'
 #' Proper scoring rules for probabilities:
 #'
@@ -125,6 +131,9 @@ boundary <- function(p, q, type) {
 #' @references
 #'
 #' Preprint on e-values for forecast evaluation:
+#'
+#' A. Henzi and J. F Ziegel. Valid sequential inference on probability forecast
+#' performance. arXiv preprint arXiv:2103.08402, 2021.
 #'
 #' Proper scoring rules for probabilities:
 #'
@@ -195,6 +204,9 @@ evalue <- function(y, p, q, alt, c = rep(1, length(y)), type) {
 #' @references
 #'
 #' Preprint on e-values for forecast evaluation:
+#'
+#' A. Henzi and J. F Ziegel. Valid sequential inference on probability forecast
+#' performance. arXiv preprint arXiv:2103.08402, 2021.
 #'
 #' Proper scoring rules for probabilities:
 #'

@@ -36,18 +36,14 @@ y <- sim$y
 ## evidence against null hypothesis.
 sim_e <- etest(p = p, q = q, y = y, alt = q, h = 1, type = tp)$evalue
 sim_e
-#> [1] 10414493987
 
 ## If E is an e-value, then 1/E is a p-value. Here 1/E is very small.
 1 / sim_e
-#> [1] 9.602003e-11
 
 ## The result depends on the alternative "alt", and there is no default!
 ## Read the suggestions on how to choose "alt" in the preprint.
 etest(p = p, q = q, y = y, alt = q * 0.75 + p * 0.25, h = 1, type = tp)$evalue
-#> [1] 6.748264e+17
 etest(p = p, q = q, y = y, alt = q * 0.6 + p * 0.4, h = 1, type = tp)$evalue
-#> [1] 2680439427
 
 ## If the goal is rejecting at a significance level "alpha", use "stopped"
 ## e-values. Stopped e-values have better power for rejecting at the given
@@ -55,26 +51,6 @@ etest(p = p, q = q, y = y, alt = q * 0.6 + p * 0.4, h = 1, type = tp)$evalue
 ## 115 observations (and this is valid!).
 etest(p = p, q = q, y = y, alt = q, h = 1, type = tp, stopped = TRUE,
  alpha = 0.05)
-#> $evalue
-#> [1] 27.19683
-#> 
-#> $pvalue
-#> [1] 0.03676899
-#> 
-#> $alpha
-#> [1] 0.05
-#> 
-#> $h
-#> [1] 1
-#> 
-#> $stopped
-#> [1] TRUE
-#> 
-#> $stop_ind
-#> [1] 115
-#> 
-#> $n
-#> [1] 1000
 
 # Simulation example 2 (see ?sim2). Lagged forecasts. In this example, p_j is
 # the ideal forecast for y at lag j (j = 1: one "day" ahead, j = 2: two "days"
@@ -90,11 +66,9 @@ y <- sim$y
 ## "day 2" forecast.
 sim_e <- etest(p = p, q = q, y = y, alt = q, h = 2, type = tp)$evalue
 sim_e
-#> [1] 62.33434
 
 ## Corresponding p-value is
 1 / sim_e
-#> [1] 0.01604252
 
 # Be cautious when data contains NA!
 set.seed(345)
@@ -107,19 +81,17 @@ y[na_ind] <- NA
 
 ## Assume lag 3. Correct e-value (NA included):
 etest(p = p, q = q, y = y, alt = q, h = 3, type = tp)$evalue
-#> [1] 9.97592e+11
 
 ## Wrong e-value when NA are removed:
 p_w <- p[-na_ind]
 q_w <- q[-na_ind]
 y_w <- y[-na_ind]
 etest(p = p_w, q = q_w, y = y_w, alt = q_w, h = 3, type = tp)$evalue
-#> [1] 2.108577e+14
 ```
 
 ## References
 
-Read the arXiv preprint on:
+Preprint available on <https://arxiv.org/abs/2103.08402>.
 
 Replication material for all results in the preprint is contained in the
 folder `replication_material`.
