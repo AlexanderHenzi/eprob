@@ -85,3 +85,7 @@
 #' etest(p = p_w, q = q_w, y = y_w, alt = q_w, h = 3, type = tp)$evalue
 NULL
 
+## usethis namespace: start
+#' @importFrom Rcpp sourceCpp
+## usethis namespace: end
+NULL

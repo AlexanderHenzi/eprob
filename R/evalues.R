@@ -251,7 +251,7 @@ etest <- function(p, q, y, alt, c = rep(1, length(y)), type, h, stopped = FALSE,
       c(correction[-seq_len(j)], rep(1, j))
     )
   }
-  ik <- seq_len(n) %% h
+  ik <- rep(seq_len(h), ceiling(n / h))[seq_len(n)]
   f <- numeric(n)
   splitted <- split(e, ik)
   splitted <- lapply(splitted, function(x) diff(c(0, cumprod(x))))
