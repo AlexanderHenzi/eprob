@@ -255,7 +255,7 @@ etest <- function(p, q, y, alt, c = rep(1, length(y)), type, h, stopped = FALSE,
   f <- numeric(n)
   splitted <- split(e, ik)
   splitted <- lapply(splitted, function(x) diff(c(0, cumprod(x))))
-  for (j in seq_len(h)) f[ik == j - 1] <- splitted[[j]]
+  for (j in seq_len(h)) f[ik == j] <- splitted[[j]]
   f <- cumsum(f) / h
   if (stopped) {
    stop_ind <- which.max(f >= correction / alpha)
