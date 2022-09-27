@@ -93,11 +93,11 @@ etest(p = p_w, q = q_w, y = y_w, alt = q_w, h = 3, type = tp)$evalue
 
 The method is described in
 
-Alexander Henzi, Johanna F Ziegel, Valid sequential inference on
-probability forecast performance, Biometrika, 2021;, asab047,
-<https://doi.org/10.1093/biomet/asab047>
+Alexander Henzi, Johanna F Ziegel, Valid sequential inference on probability forecast performance, Biometrika, Volume 109, 2022, Pages 647–663, https://doi.org/10.1093/biomet/asab047
 
-A preprint is available on <https://arxiv.org/abs/2103.08402>.
+Alexander Henzi, Johanna F Ziegel, Correction to: ‘Valid sequential inference on probability forecast performance’, Biometrika, 2022;, asac043, https://doi.org/10.1093/biomet/asac043
+
+The article is also available on <https://arxiv.org/abs/2103.08402>.
 
 Replication material for all results in the preprint is contained in the
 folder `replication_material`.
