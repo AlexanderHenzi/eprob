@@ -80,4 +80,5 @@ for (i in seq_len(20)) {
  precip_fcs_models[[i]]$hclr_noscale <- list(hclr_noscale_fit)
 }
 
+precip_fcs_models <- do.call(rbind, precip_fcs_models)
 save(list = "precip_fcs_models", file = "precip_fcs_models.rda")
